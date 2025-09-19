@@ -17,6 +17,7 @@ The fan is powered by PoE from port 4, and the script automatically enables or d
 - UniFi UCG-Fiber with firmware supporting local API.
 - API key generated in UniFi Console (Settings → Control Plane → Integrations).
 - External fan connected to port 4 (PoE powered).
+- PON module inserted in port 7 (SFP+).
 - SSH access to UCG-Fiber.
 
 ### Installation
