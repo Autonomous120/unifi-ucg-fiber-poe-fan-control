@@ -2,11 +2,11 @@
 # UniFi UCG-Fiber 温度控制 PoE 脚本
 
 # ========== 配置 ==========
-DEVICE_ID="******************"		# 替换为实际 Device ID
-API_KEY="******************"		# 替换为实际 API Key
-PORT_IDX=4							# 端口号 (从1开始计数，UCG-Fiber填4)
-HIGH_TEMP=50						# 超过此温度打开 PoE
-LOW_TEMP=43							# 低于此温度关闭 PoE
+DEVICE_ID="your_device_id"	# 替换为实际 Device ID
+API_KEY="your_api_key"		# 替换为实际 API Key
+PORT_IDX=4					# 端口号 (从1开始计数，UCG-Fiber填4)
+HIGH_TEMP=50				# 超过此温度打开 PoE
+LOW_TEMP=43					# 低于此温度关闭 PoE
 # ==========================
 
 # 状态文件放在脚本所在目录
