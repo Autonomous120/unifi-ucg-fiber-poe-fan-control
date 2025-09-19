@@ -29,9 +29,9 @@ The fan is powered by PoE from port 4, and the script automatically enables or d
         -H 'Accept: application/json' \
         -o '/persistent/ucg_devices.json'
    ```
-3. Download /persistent/ucg_devices.json and identify the correct device_id corresponding to UCG-Fiber (look for the entry with public IP).
-4. Edit pon_fan_control.sh, configure your API key and device ID.
-5. Upload the script to /persistent/scripts and make it executable:
+3. Download `/persistent/ucg_devices.json` and identify the correct `device_id` corresponding to UCG-Fiber (look for the entry with public IP).
+4. Edit `pon_fan_control.sh`, configure your API key and device ID.
+5. Upload the script to `/persistent/scripts` and make it executable:
 `chmod +x /persistent/scripts/pon_fan_control.sh`
 Schedule the script with cron (every 5 minutes):
 ```
