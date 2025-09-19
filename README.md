@@ -43,7 +43,9 @@ The fan is powered by PoE from port 4, and the script automatically enables or d
 3. Download `/persistent/ucg_devices.json` and identify the correct `device_id` corresponding to UCG-Fiber (look for the entry with public IP).
 4. Edit `pon_fan_control.sh`, configure your API key and device ID.
 5. Upload the script to `/persistent/scripts` and make it executable:
-   ```chmod +x /persistent/scripts/pon_fan_control.sh```
+   ```
+   chmod +x /persistent/scripts/pon_fan_control.sh
+   ```
    Schedule the script with `cron` (every 5 minutes):
    ```
    crontab -e
@@ -62,7 +64,9 @@ The fan is powered by PoE from port 4, and the script automatically enables or d
 3. 下载 `/persistent/ucg_devices.json` 文件，找到带公网 IP 的条目，即为 UCG-Fiber 的 `device_id`。
 4. 编辑 `pon_fan_control.sh`，填写 API Key 和设备 ID。
 5. 将脚本上传至 `/persistent/scripts` 并赋予可执行权限：
-   ```chmod +x /persistent/scripts/pon_fan_control.sh```
+   ```
+   chmod +x /persistent/scripts/pon_fan_control.sh
+   ```
    使用 `cron` 定时运行脚本（每 5 分钟执行一次）：
    ```
    crontab -e
