@@ -46,10 +46,10 @@ The fan is powered by PoE from port 4, and the script automatically enables or d
 5. Upload the script to `/persistent/scripts` and make it executable:
 `chmod +x /persistent/scripts/pon_fan_control.sh`
 Schedule the script with cron (every 5 minutes):
-```
-crontab -e
-*/5 * * * * /persistent/scripts/pon_fan_control.sh
-```
+   ```
+   crontab -e
+   */5 * * * * /persistent/scripts/pon_fan_control.sh
+   ```
 
 ### 安装步骤
 1. 在 UniFi 控制台生成 API Key，名称建议设为 PON_Fan_Control，并妥善保存。
@@ -65,7 +65,7 @@ crontab -e
 5. 将脚本上传至 `/persistent/scripts` 并赋予可执行权限：
 `chmod +x /persistent/scripts/pon_fan_control.sh`
 使用 cron 定时运行脚本（每 5 分钟执行一次）：
-```
-crontab -e
-*/5 * * * * /persistent/scripts/pon_fan_control.sh
-```
+   ```
+   crontab -e
+   */5 * * * * /persistent/scripts/pon_fan_control.sh
+   ```
