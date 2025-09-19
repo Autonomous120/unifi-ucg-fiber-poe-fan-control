@@ -1,7 +1,4 @@
 # UniFi UCG-Fiber PoE Fan Control
-Automated PoE-based fan control script for UniFi UCG-Fiber. Uses local API to toggle PoE on port 4 according to PON module temperature, powering an external cooling fan.
-
-基于 PoE 的 UniFi UCG-Fiber 自动风扇控制脚本。通过本地 API 根据 PON 模块温度控制 4 号端口的 PoE 供电，从而驱动外接散热风扇。
 
 This repository provides a Bash script to control an external cooling fan for the UniFi UCG-Fiber gateway.  
 The fan is powered by PoE from port 4, and the script automatically enables or disables PoE based on the temperature of the PON module.
