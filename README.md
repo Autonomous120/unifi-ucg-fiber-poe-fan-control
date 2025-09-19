@@ -2,6 +2,7 @@
 
 This repository provides a Bash script to control an external cooling fan for the UniFi UCG-Fiber gateway.  
 The fan is powered by PoE from port 4, and the script automatically enables or disables PoE based on the temperature of the PON module.
+
 本仓库提供一个 Bash 脚本，用于为 UniFi UCG-Fiber 网关控制外接散热风扇。
 风扇通过 4 号端口的 PoE 供电，脚本会根据 PON 模块温度自动启用或关闭 PoE。
 
