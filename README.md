@@ -3,20 +3,11 @@
 This repository provides a Bash script to control an external cooling fan for the UniFi UCG-Fiber gateway.  
 The fan is powered by PoE from port 4, and the script automatically enables or disables PoE based on the temperature of the PON module.
 
-本仓库提供一个 Bash 脚本，用于为 UniFi UCG-Fiber 网关控制外接散热风扇。
-风扇通过 4 号端口的 PoE 供电，脚本会根据 PON 模块温度自动启用或关闭 PoE。
-
-
 ### Features
 - Reads PON module temperature using `ethtool`.
 - Toggles PoE on port 4 through the local UniFi API.
 - Uses configurable high and low temperature thresholds for hysteresis control.
 - Designed to run via `cron` on the UCG-Fiber itself.
-### 功能
-- 使用 `ethtool` 读取 PON 模块温度。
-- 通过内置的 UniFi API 切换 4 号端口的 PoE。
-- 使用可配置的高温和低温阈值，实现滞后启动的控制。
-- 在 UCG-Fiber 上通过 `cron` 定时运行。
 
 ### Prerequisites
 - UniFi UCG-Fiber with firmware supporting local API.
@@ -24,12 +15,6 @@ The fan is powered by PoE from port 4, and the script automatically enables or d
 - External fan connected to port 4 (PoE powered).
 - PON module inserted in port 7 (SFP+).
 - SSH access to UCG-Fiber.
-### 前提条件
-- UniFi UCG-Fiber 固件版本需支持 API。
-- 在 UniFi 控制台中生成 API Key（设置 → 控制平面 → 集成）。
-- 风扇连接至 4 号端口（PoE 供电）。
-- PON 模块插入 7 号端口（SFP+）。
-- 可通过 SSH 访问 UCG-Fiber。
 
 ### Installation
 1. Generate an API key in the UniFi Console, name it `PON_Fan_Control`, and save it securely.
@@ -51,6 +36,23 @@ The fan is powered by PoE from port 4, and the script automatically enables or d
    crontab -e
    */5 * * * * /persistent/scripts/pon_fan_control.sh
    ```
+---
+
+本仓库提供一个 Bash 脚本，用于为 UniFi UCG-Fiber 网关控制外接散热风扇。
+风扇通过 4 号端口的 PoE 供电，脚本会根据 PON 模块温度自动启用或关闭 PoE。
+
+### 功能
+- 使用 `ethtool` 读取 PON 模块温度。
+- 通过内置的 UniFi API 切换 4 号端口的 PoE。
+- 使用可配置的高温和低温阈值，实现滞后启动的控制。
+- 在 UCG-Fiber 上通过 `cron` 定时运行。
+
+### 前提条件
+- UniFi UCG-Fiber 固件版本需支持 API。
+- 在 UniFi 控制台中生成 API Key（设置 → 控制平面 → 集成）。
+- 风扇连接至 4 号端口（PoE 供电）。
+- PON 模块插入 7 号端口（SFP+）。
+- 可通过 SSH 访问 UCG-Fiber。
 
 ### 安装步骤
 1. 在 UniFi 控制台生成 API Key，名称建议设为 `PON_Fan_Control`，并妥善保存。
